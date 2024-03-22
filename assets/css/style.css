@@ -72,7 +72,12 @@ p {
   padding: 8px 24px;
 }
 
+.tentang-kami-right {
+  padding: 24px;
+}
+
 .tentang-kami-card {
+  width: 100%;
   font-family: "Open Sans", sans-serif;
   background: #fff;
   text-align: center;
@@ -150,6 +155,69 @@ p {
   object-fit: cover;
 }
 
+/* Kontak */
+.kontak-box .kontak-input input,
+.kontak-box .kontak-input textarea {
+  width: 100%;
+  outline: none;
+  color: #8f8f8f;
+  border: 1px solid #8f8f8f;
+  padding: 10px 16px;
+}
+.kontak-box .kontak-input input:focus,
+.kontak-box .kontak-input textarea:focus {
+  color: #01a44e;
+  border: 1px solid #01a44e;
+}
+
+.btn-kontak {
+  width: 100%;
+  background-color: #01a44e;
+  color: white;
+  padding: 10px;
+  border: none;
+}
+
+.map {
+  height: 270px;
+  width: 100%;
+}
+.info .item {
+  margin-bottom: 36px;
+}
+.info .item i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 40px;
+  font-size: 20px;
+  background-color: #f9f9f9;
+  color: #01a44e;
+  transition: 0.3s;
+}
+
+.info .item:hover i {
+  color: white;
+  background-color: #01a44e;
+}
+
+.info .item h4 {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.info .item p {
+  color: #8f8f8f;
+  font-size: 14px;
+  margin-top: -6px;
+}
+
+/* Footer */
+#footer {
+  background-color: #f9f9f9;
+}
+
 /* General */
 section {
   padding: 60px 12px;
@@ -157,10 +225,16 @@ section {
 }
 
 .title {
-  color: #8f8f8f;
+  background: #01a44e;
+  color: white;
+  padding: 6px 32px;
+  border-radius: 50px;
+  width: fit-content;
+  margin: auto;
   text-transform: uppercase;
   letter-spacing: 1px;
   font-size: 14px;
+  margin-bottom: 12px;
 }
 .subtitle {
   font-weight: 600;
@@ -172,6 +246,11 @@ section {
   box-shadow: 0 15px 25px -5px rgb(0 0 0 / 0.1), 0 0px 10px -6px rgb(0 0 0 / 0.1);
 }
 
+footer {
+  padding: 20px 12px;
+  border-top: 4px solid #01a44e;
+}
+
 @media (max-width: 768px) {
   .subtitle {
     font-size: 24px;
@@ -179,5 +258,13 @@ section {
   .navbar-brand img {
     height: 50px;
     width: 40px;
+  }
+  .btn-berkas,
+  .btn-brosur {
+    flex: 1 1 0%;
+  }
+
+  .info .item h4 {
+    font-size: 20px;
   }
 }
